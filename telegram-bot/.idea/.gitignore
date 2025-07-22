@@ -10,3 +10,6 @@
 /dataSources.local.xml
 .idea
 *.iml
+target/
+mvnw
+mvnw.cmd
