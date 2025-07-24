@@ -51,12 +51,12 @@ public class TelegramBotUpdatesListener implements UpdatesListener {
                 Long chatId = update.message().chat().id();
 
                 if (messageText.equals("/start")) {
-                    telegramBot.execute(new com.pengrad.telegrambot.request.SendMessage(
+                    telegramSenderService.sendMessage(
                             chatId,
                             "Привет :) \n сюда ты сможешь присылать свои напоминания в формате - <<01.01.2025 20:00 Сделать домашнюю работу>> " +
                                     "\n и я тебе напомню о ней в указанное время"
 
-                    ));
+                    );
                 } else {
                     Matcher matcher = pattern.matcher(messageText);
                     if (matcher.matches()) {

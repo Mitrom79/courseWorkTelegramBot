@@ -1,6 +1,10 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/MACOSX/
+.idea
+*.iml
+/target/
 # Editor-based HTTP Client requests
 /httpRequests/
 # Environment-dependent path to Maven home directory
@@ -8,8 +12,5 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-.idea
-*.iml
-target/
 mvnw
 mvnw.cmd
